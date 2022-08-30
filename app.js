@@ -18,7 +18,7 @@ const app = express();
 app.use(cors())
 app.use(express.json())
 const MULTI_DEVICE = process.env.MULTI_DEVICE || 'true';
-const server = require('http').Server(app)
+const server = require('https').Server(app)
 
 const port = process.env.PORT || 3000
 var client;
